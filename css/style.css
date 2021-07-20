@@ -1,0 +1,457 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+html {
+  max-width: 1800px;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+}
+body {
+  padding-bottom: 40px;
+  position: relative !important;
+}
+button {
+  border: none;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+input {
+  border: none;
+}
+input:focus {
+  box-shadow: 1px 0px 2px 3px #cadfff;
+}
+
+.btn {
+  font-family: Arial, Helvetica, sans-serif;
+
+  background-color: #0065ff;
+  padding: 10px;
+  color: #ffffff;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.btn:hover {
+  background-color: #0046af;
+}
+.btn.login {
+  background-color: #ffffff;
+  color: #0065ff;
+  box-shadow: 0px 0px 2px 1px #e6e6e6;
+}
+[type="email"] {
+  padding: 10px;
+  width: 300px;
+}
+#header {
+  font-size: 1.1em;
+  position: relative;
+  background-color: #efecff;
+  background-image: linear-gradient(to bottom, #efecff 50%, #ffffff);
+  font-family: "Lato", sans-serif;
+  margin-bottom: 20px;
+  padding-left: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 2 solid red;
+}
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+/* .cabecalho::after {
+  content: "";
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  overflow: hidden;
+} */
+.logo-trello {
+  width: 140px;
+  min-width: 120px;
+  display: flex;
+  align-items: center;
+}
+
+.main-header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+.hero-header {
+  text-align: end;
+  margin-top: 100px;
+  padding-top: 50px;
+  height: 600px;
+  box-sizing: border-box;
+}
+.hero-header img {
+  min-height: 400px;
+}
+.titulo-header {
+  font-size: 3em;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+
+.text-header {
+  max-width: 50%;
+  margin-right: 80px;
+}
+
+.titulo {
+  margin: 10px 0;
+  line-height: 3.5rem;
+}
+.titulo + p {
+  line-height: 2rem;
+  margin: 15px 0;
+}
+
+.inputEmail {
+  padding: 12px;
+  border: 1px solid #969696;
+  font-size: 1.25rem;
+  color: #414141;
+  border: 1px solid #979797;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#main {
+  display: grid;
+  max-width: 1080px;
+  margin: 40px auto 0;
+  box-sizing: border-box;
+  color: #464646;
+  grid-template-columns: 1;
+  justify-items: center;
+  font-size: 1.25em;
+  line-height: 1.75em;
+  padding: 0 20px;
+}
+.rowInit {
+  max-width: 680px;
+  margin: 60px auto;
+  text-align: center;
+  line-height: 2em;
+}
+.rowInit .login {
+  margin-top: 20px;
+  border: 1px solid #969696;
+}
+.rowInit .login:hover {
+  background-color: #0065ff;
+  color: #ffffff;
+}
+.patrocinadores span {
+  display: inline-block;
+  /* margin: 15px; */
+  padding: 0 15px;
+  line-height: 24px;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+.patrocinadores span ~ span {
+  border-left: 3px solid #969696;
+}
+.recursos {
+  width: 50%;
+  justify-self: flex-start;
+  margin: 60px 0;
+}
+
+.db-row {
+  /* grid-column: 1/-1; */
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0 40px;
+  justify-content: space-between;
+}
+
+.hero-item:nth-child(even) {
+  text-align: end;
+}
+.hero-item img {
+  width: 100%;
+  max-width: 400px;
+  /* max-height: 100%; */
+}
+
+.sub-titulo {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 40px 0;
+  font-weight: bold;
+}
+h5 {
+  font-weight: bold;
+}
+.db-row:last-of-type,
+#tags {
+  padding-bottom: 60px;
+  border-bottom: 1px solid #4b4b4b !important;
+}
+
+#tags {
+  margin: 0 auto;
+}
+
+#tags .tag-item {
+  display: flex;
+  align-items: center;
+}
+#tags .tag-item img {
+  margin-right: 30px;
+}
+.btnTag {
+  margin: 10px 0;
+  padding: 5px 15px;
+  background-color: transparent;
+  border: 1px solid #0065ff;
+  color: #0065ff;
+}
+
+#depoimentos {
+  min-height: 480px;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgb(236, 241, 255);
+  padding: 60px 10px;
+  display: grid;
+  margin: 100px auto 0;
+  color: #464646;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  position: relative !important;
+}
+.containersDepoiemntos {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.item-dep {
+  /* activeDepoimento */
+  display: none !important;
+  /* display: grid; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 80px;
+  padding-bottom: 30px;
+  border-bottom: 5px solid #464646;
+}
+#depoimentos .item-dep.active {
+  display: grid !important;
+}
+.hero-dep {
+  font-size: 0.75em;
+  grid-column: 1/2;
+}
+.info-dep {
+  grid-column: 2/5;
+}
+.info-dep p {
+  text-align: end;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+.hero-dep h3,
+.hero-dep h5,
+h3 {
+  margin: 0;
+  font-weight: bold;
+}
+.hero-dep img {
+  width: 160px;
+
+}
+
+#depoimentos .citacao {
+  font-size: 1.25em;
+  position: relative;
+  line-height: 1.75em;
+}
+#depoimentos .citacao::before {
+  content: '"';
+  font-size: 2.25em;
+  font-family: "Times New Roman", Times, serif;
+  position: absolute;
+  left: -30px;
+}
+.controlAimation {
+  position: absolute;
+  bottom: 10px;
+  left: 85px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.controlAimation button {
+  background-color: #414141;
+  color: #ffffff;
+  /* width: 40px; */
+  /* height: 40px; */
+  margin: 0 10px;
+  padding: 2px 5px 5px;
+}
+.itemCarrossel {
+  display: inline-block;
+  background-color: #969696;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.sign {
+  max-width: 1080px;
+  margin: 60px auto;
+  text-align: center;
+  grid-column: 1/-1;
+  background: rgb(6, 0, 97);
+  background: radial-gradient(
+    circle,
+    rgba(6, 0, 97, 1) 6%,
+    rgba(9, 0, 150, 1) 10%,
+    rgba(25, 18, 119, 1) 18%,
+    rgba(106, 96, 255, 1) 23%,
+    rgba(27, 13, 230, 1) 32%,
+    rgba(0, 205, 250, 1) 40%,
+    rgba(3, 34, 251, 1) 100%
+  );
+  padding: 40px 20px;
+  box-sizing: border-box;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.sign p {
+  max-width: 600px;
+  margin: 40px auto;
+  font-weight: bold;
+  color: #e6e6e6;
+  font-size: 1.25em;
+  letter-spacing: 1px;
+  line-height: 1.5em;
+}
+[action="cadastro"] {
+  margin: 0 auto;
+  display: flex;
+}
+[action="cadastro"] input {
+  margin-right: 10px;
+}
+
+.downloadTrello {
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #f7f7f7;
+  margin: 40px auto 60px;
+  font-size: 1.2em;
+}
+.downloadTrello * {
+  margin: 10px;
+}
+#selectIdoma {
+  margin: 20px 0;
+}
+
+#footer {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 1.1em;
+}
+#footer button {
+  margin: 40px 0;
+}
+.itens-foooter * {
+  display: inline-block;
+  margin: 10px;
+  color: #464646;
+}
+.itens-foooter + img {
+  width: 300px;
+  margin: 40px auto 20px;
+}
+
+.formInputAndBtn {
+  display: flex;
+}
+.formInputAndBtn > * {
+  margin: 0 10px;
+}
+/* body::-webkit-scrollbar {
+  background-color: #0046af;
+  border-radius: 20px; 
+  border: 3px solid orange;
+
+} */
+
+.activeDepoimento {
+  /* display: block; */
+  background-color: #414141;
+}
+
+/* width */
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(93, 201, 255);
+  border-radius: 10px;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #0046af;
+  border-radius: 10px;
+}

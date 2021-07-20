@@ -1,0 +1,128 @@
+/* FORMTACAO RESPONSIVO */
+
+@media only screen and (max-width: 980px) {
+  .hero-header {
+    display: none;
+  }
+  .main-header {
+    padding-top: 60px;
+  }
+  .text-header {
+    max-width: 80%;
+  }
+  .recursos {
+    width: 80%;
+    margin: 60px auto;
+  }
+  #tags .tag-item img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  #header {
+    padding: 0;
+    text-align: center;
+  }
+  .cadastro-header .btn {
+    margin: 0 auto;
+  }
+  .cadastro-header .inputEmail {
+    display: none;
+  }
+  .text-header {
+    margin: 0;
+    padding: 0px 20px;
+    max-width: 100%;
+  }
+  .main-header {
+    /* padding: 0 !important; */
+    display: block;
+    margin: 0px auto 0;
+    text-align: center;
+    padding: 115px 0px 0px !important;
+  }
+  .main-header > * {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .rowInit,
+  #main {
+    margin-top: 0;
+    text-align: center;
+  }
+  .patrocinadores {
+    margin: 15px auto;
+  }
+  .db-row {
+    /* display: block; */
+    grid-template-columns: 1fr;
+    margin: 40px auto;
+  }
+  .hero-item img,
+  .recursos {
+    max-width: 90% !important;
+    margin: auto;
+  }
+  .hero-item img {
+    max-width: 70% !important;
+  }
+  .db-row > * {
+    margin: 10px 0;
+  }
+  .automacao .hero-item {
+    order: 2;
+    margin: 30px auto 0;
+  }
+  .hero-item {
+    text-align: center !important;
+  }
+  #depoimentos .item-dep.active {
+    display: block !important;
+    font-size: 0.875em;
+    overflow: hidden;
+  }
+  .hero-dep {
+    margin: 0px auto 60px;
+  }
+  .formInputAndBtn {
+    flex-wrap: wrap;
+  }
+  .sign .formInputAndBtn > * {
+    width: 100%;
+    margin: 5px 0;
+  }
+  .cabecalho {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between !important;
+  }
+  .cabecalho .logo-trello {
+    margin: 0px 15px 10px 0px;
+  }
+  .downloadTrello div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .downloadTrello div img {
+    min-width: 200px;
+    max-width: 45% !important;
+  }
+  #depoimentos .citacao::before {
+    display: block;
+    position: relative;
+    left: 0px;
+    font-size: 3.5em;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .controlAimation {
+    left: 5px;
+  }
+}
+
+.cabecalho.ativado {
+  background-color: #ffffff;
+  box-shadow: 1px 0px 2px 3px #cecece;
+  z-index: 2;
+}
